@@ -1,0 +1,3 @@
+Unipath==0.2.1
+psycopg2
+south==0.7.5
