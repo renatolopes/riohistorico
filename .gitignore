@@ -1,0 +1,15 @@
+bin
+build
+include
+lib
+local
+man
+share
+Scripts
+.Python
+*.pyc
+*~
+*.pwc
+.DS_Store
+.idea
+*.db
