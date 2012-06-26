@@ -1,0 +1,14 @@
+﻿
+/*Content e List view
+-------------------------*/
+
+.ui-content {
+	padding: 0;
+	text-align: center;
+}
+.ui-content .ui-listview {
+	overflow: hidden;
+	margin: 0px;
+	/*border-top: thin #8a8a8a;*/
+	border-top: 1px solid #706F6F;
+}

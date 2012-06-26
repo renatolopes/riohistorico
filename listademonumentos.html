@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rio Histórico</title>
+	<link rel="stylesheet"  href="css/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet"  href="css/jquery.mobile.scrollview.css" />
+	<link rel="stylesheet"  href="css/riohistorico.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.mobile.scrollview.js"></script>
+	<script src="js/scrollview.js"></script>
+	<script src="js/geral.js"></script>	
+</head> 
+<body> 
+<div data-role="page" id="listaDeMonumentos" onresize="resizeVideo();resizePage();$.mobile.fixedToolbars.show();">
+	<header data-role="header" data-position="fixed" data-inline="true">
+         <a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext">Voltar</a>
+			<h1>
+				Rio Histórico
+			</h1>
+		</header>
+	<div data-role="content" id="content">
+        <img src="imagens/mapaPontosHistoricosMini.png" />
+    
+            <ul data-role="listview">
+	            <li><a rel="external" href="cristoredentor.html">Cristo Redentor</a></li>
+	            <li><a rel="external" href="cristoredentor.html">Maracanã</a></li>
+	            <li><a rel="external" href="cristoredentor.html">Museu de Arte Moderna (MAM)</a></li>
+                <li><a rel="external" href="cristoredentor.html">Pão de Açúcar</a></li>
+                <li><a rel="external" href="cristoredentor.html">Arcos da Lapa</a></li>
+            </ul>
+        </div>
+    <img id="analytics" src="" />
+</div>
+<script type="text/javascript">
+    var alturaDevice = $(window).height();
+    resizeVideo();
+</script>
+</body>
+</html>
