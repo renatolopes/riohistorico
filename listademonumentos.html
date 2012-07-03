@@ -2,34 +2,59 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rio Histórico</title>
-	<link rel="stylesheet"  href="css/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet"  href="css/jquery.mobile.scrollview.css" />
-	<link rel="stylesheet"  href="css/riohistorico.css" />
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+	<link rel="stylesheet"  href="css/codiqa.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/jquery.mobile.scrollview.js"></script>
 	<script src="js/scrollview.js"></script>
 	<script src="js/geral.js"></script>	
 </head> 
 <body> 
-<div data-role="page" id="listaDeMonumentos" onresize="resizeVideo();resizePage();$.mobile.fixedToolbars.show();">
-	<header data-role="header" data-position="fixed" data-inline="true">
-         <a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext">Voltar</a>
-			<h1>
-				Rio Histórico
-			</h1>
-		</header>
-	<div data-role="content" id="content">
-        <img src="imagens/mapaPontosHistoricosMini.png" />
-    
-            <ul data-role="listview">
-	            <li><a rel="external" href="cristo-redentor.html">Cristo Redentor</a></li>
-	            <li><a rel="external" href="maracana.html">Maracanã</a></li>
-	            <li><a rel="external" href="museu-de-arte-moderna-mam.html">Museu de Arte Moderna (MAM)</a></li>
-                <li><a rel="external" href="pao-de-acucar.html">Pão de Açúcar</a></li>
-                <li><a rel="external" href="arcos-da-lapa.html">Arcos da Lapa</a></li>
-            </ul>
+    <div data-role="page" data-theme="d" id="listaDeMonumentos" onresize="resizePage();$.mobile.fixedToolbars.show();">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-inline="true" data-transition="fade" data-theme="a" rel="external" href="index.html" data-icon="back" data-iconpos="notext">
+                </a>
+                <a data-role="button" data-transition="fade" data-theme="a" rel="external" href="index.html" data-icon="home" data-iconpos="notext">
+                </a>
+                <h1>
+                    Rio Histórico
+                </h1>
+            </div>
+            <div data-role="content" style="padding: 8px">
+                <h2>
+                    Lista de monumentos
+                </h2>
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=Rio de Janeiro, Brasil&amp;zoom=11&amp;size=288x200&amp;markers=Cristo Redentor, Rio de Janeiro, Brasil|Arcos da Lapa, Rio de Janeiro|Muse de arte moderna, Rio de Janeiro|Pão de Açúcar, Rio de Janeiro|Maracanã, Rio de Janeiro&amp;sensor=false" width="288" height="200" />
+                <ul data-role="listview" data-divider-theme="c" data-inset="true">
+                    <li data-theme="c">
+                        <a  rel="external" href="cristo-redentor.html" data-transition="none">
+                            Cristo Redentor
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a rel="external" href="maracana.html" data-transition="none">
+                            Maracanã
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a rel="external" href="arcos-da-lapa.html" data-transition="none">
+                            Arcos da Lapa
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a rel="external" href="museu-de-arte-moderna-mam.html" data-transition="none">
+                            Museu de arte moderna - MAM
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a rel="external" href="pao-de-acucar.html" data-transition="none">
+                            Pão de Açúcar
+                        </a>
+                    </li>
+                </ul>
         </div>
     <img id="analytics" src="" />
 </div>
