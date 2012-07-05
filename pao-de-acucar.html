@@ -33,32 +33,32 @@
             <img width="288" height="200" src="http://3.bp.blogspot.com/_pHPGJ2NXr_I/TQofgzQ0wYI/AAAAAAAAASg/8RVK9ZOpNMo/s400/rio_pao_de_acucar.jpg" />
         </div>
         <div>
-            <ul>
-                <li>
-                    O modelo original da cabeça do Cristo foi adquirido pela Prefeitura do
-                    Rio de Janeiro em 2001 por 84 mil reais. O escultor Paul Landowski assina
-                    a peça, feita em terracota.
-                </li>
-                <li>
-                    Em 2004, a Sociedade de Autores e Compositores Dramáticos da França, por
-                    solicitação da família de Ladowsky, encaminhou à Sociedade Brasileira de
-                    Autores um pedido de cobrança de direitos autorais pelo uso da imagem do
-                    Cristo. Segundo a lei brasileira, não seria necessário pagar o valor requerido
-                    porque após 15 anos a obra se tornou objeto de domínio público.
-                </li>
-                <li>
-                    Para a comemoração dos 440 anos do Rio de Janeiro (RJ), em 2005, o monumento
-                    recebeu uma nova iluminação concebida pela francesa Agnès P. Winter. A
-                    cor azul foi escolhida para celebrar a paz.
-                </li>
-            </ul>
+            <p>
+                <strong id="textoCuriosidade">
+                </strong>
+            </p>
+              <a data-role="button" id="btnMaisCuriosidades">Ver mais</a>
         </div>
     </div>
     <img id="analytics" src="" />
 </div>
 <script type="text/javascript">
+    recuperarCuriosidade(dadosPaoDeAcucar);
     var alturaDevice = $(window).height();
     resizeVideo();
+
+    $(document).ready(function () {
+        $('#btnMaisCuriosidades').bind('click', function (e) {
+            recuperarCuriosidade(dadosPaoDeAcucar);
+            e.stopPropagation();
+            e.preventDefault();
+            return false;
+        });
+
+        $.mobile.ajaxEnabled = true;
+        $.mobile.loadingMessage = 'Carregando';
+        $.mobile.pageLoadErrorMessage = 'Falha ao carregar';
+    });
 </script>
 </body>
 </html>

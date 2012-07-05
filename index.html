@@ -48,12 +48,17 @@
                     </b>
                 </p>
             </div>
-            <a data-role="button" data-transition="none" data-theme="c" rel="external" href="listademonumentos.html">
+            <a data-role="button" data-transition="fade" data-ajax="false" data-theme="c" href="listademonumentos.html">
                 Veja Mais
             </a>
         </div>
     </div>
 <script type="text/javascript">
+    $(document).bind("mobileinit", function () {
+        $.mobile.pushStateEnabled = false;
+        console.log('teste');
+    });
+    
 	var alturaDevice = $(window).height();
 </script>
 </body>
