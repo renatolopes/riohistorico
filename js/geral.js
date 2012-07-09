@@ -1,4 +1,30 @@
-
+var jsonLocais = {
+    "cristoredentor":
+    {
+        "lat": "-22.951877",
+        "lon": "-43.210499"
+    },
+    "paodeacucar":
+    {
+        "lat": "-22.947222",
+        "lon": "-43.156111"
+    },
+    "arcosdalapa":
+    {
+        "lat": "-22.913778",
+        "lon": "-43.181007"
+    },
+    "mam":
+    {
+        "lat": "-22.913622",
+        "lon": "-43.171141"
+    },
+    "maracana":
+    {
+        "lat": "-22.912211",
+        "lon": "-43.230000"
+    },
+}
   function refreshListView(idLista)
   {
       if ($.data( $(idLista)[0], 'listview' ))
@@ -55,6 +81,57 @@
       var posicaoCuriosidade = Math.floor((Math.random() * arrayCuriosidades.length) + 1);
       $("#textoCuriosidade").html(arrayCuriosidades[posicaoCuriosidade]);
       return false;
+  }
+
+  // Calcula a distância em km entre dois pontos
+  function distancia(latA, lonA, latB, lonB) {
+      return (6371 * Math.acos(Math.cos(Math.PI * (90 - latB) / 180) * Math.cos(Math.PI * (90 - latA) / 180) + Math.sin(Math.PI * (90 - latB) / 180) * Math.sin(Math.PI * (90 - latA) / 180) * Math.cos(Math.PI * (lonA - lonB) / 180))).toFixed(2);
+  }
+
+  function recuperarDistanciaAtracao(atracao)
+  {
+    return distancia(localizacao.coords.latitude, localizacao.coords.longitude, atracao.lat, atracao.lon); 
+  }
+
+  function carregarDistanciaAtracoes()
+  {
+    var lista = $("#listaMonumentos");
+    $.each(lista.find("li"), function(keyMonumento, liMonumento) { 
+        $(liMonumento).find("#distancia").text(recuperarDistanciaAtracao(jsonLocais[liMonumento.id]) + " km");
+    });
+  }
+
+  function ordenarMonumentosPorGeolocalizacao()
+{
+    var lista = $("#listaMonumentos").find('li');
+	$(lista).sortElements(function(a, b){		
+		distanciaA = recuperarDistanciaAtracao(jsonLocais[a.id]);
+		distanciaB = recuperarDistanciaAtracao(jsonLocais[b.id]);
+		
+	    return distanciaA > distanciaB ? 1 : -1;
+	});
+}
+
+  // Função chamada quando navigator.geolocation.getCurrentPosition NÃO consegue fazer a leitura
+            function erro(dados) {
+                switch (dados.code) {
+                    case 1: 
+                        //alert('Você negou o acesso à sua localização!');
+                        break;
+                    case 2: 
+                        //alert('Não foi possível acessar sua posição!');
+                        break;
+                    case 3: 
+                       // alert('Timeout ao tentar pegar sua localização!');
+                        break;
+                }
+            }
+
+  // Função chamada quando navigator.geolocation.getCurrentPosition CONSEGUE fazer a leitura
+  function posicao(dados) {
+      localizacao = dados;
+     carregarDistanciaAtracoes();
+    ordenarMonumentosPorGeolocalizacao();
   }
 
   //Cristo Redentor

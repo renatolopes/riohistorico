@@ -9,8 +9,20 @@
     <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/jquery.mobile.scrollview.js"></script>
+    <script src="js/jquery.sortElements.js"></script>
 	<script src="js/scrollview.js"></script>
 	<script src="js/geral.js"></script>	
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26642642-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head> 
 <body> 
     <div data-role="page" data-theme="d" id="listaDeMonumentos" onresize="resizePage();$.mobile.fixedToolbars.show();">
@@ -27,31 +39,37 @@
                 <h2>
                     Lista de monumentos
                 </h2>
-                <img src="https://maps.googleapis.com/maps/api/staticmap?center=Rio de Janeiro, Brasil&amp;zoom=11&amp;size=288x200&amp;markers=Cristo Redentor, Rio de Janeiro, Brasil|Arcos da Lapa, Rio de Janeiro|Muse de arte moderna, Rio de Janeiro|Pão de Açúcar, Rio de Janeiro|Maracanã, Rio de Janeiro&amp;sensor=false" width="288" height="200" />
-                <ul data-role="listview" data-divider-theme="c" data-inset="true">
-                    <li data-theme="c">
+                <!--<img src="https://maps.googleapis.com/maps/api/staticmap?center=Rio de Janeiro, Brasil&amp;zoom=11&amp;size=288x200&amp;markers=Cristo Redentor, Rio de Janeiro, Brasil|Arcos da Lapa, Rio de Janeiro|Muse de arte moderna, Rio de Janeiro|Pão de Açúcar, Rio de Janeiro|Maracanã, Rio de Janeiro&amp;sensor=false" width="288" height="200" />-->
+                <img src="imagens/mapaPontosHistoricosMini.png" width="288" height="200" />
+                <ul data-role="listview" data-divider-theme="c" data-inset="true" id="listaMonumentos">
+                    <li data-theme="c" id="cristoredentor">
                         <a  rel="external" href="cristo-redentor.html" data-transition="none">
                             Cristo Redentor
+                            <span class="ui-li-count" id="distancia"></span>
                         </a>
                     </li>
-                    <li data-theme="c">
+                    <li data-theme="c" id="maracana">
                         <a rel="external" href="maracana.html" data-transition="none">
                             Maracanã
+                            <span class="ui-li-count" id="distancia"></span>
                         </a>
                     </li>
-                    <li data-theme="c">
+                    <li data-theme="c" id="arcosdalapa">
                         <a rel="external" href="arcos-da-lapa.html" data-transition="none">
                             Arcos da Lapa
+                            <span class="ui-li-count" id="distancia"></span>
                         </a>
                     </li>
-                    <li data-theme="c">
+                    <li data-theme="c" id="mam">
                         <a rel="external" href="museu-de-arte-moderna-mam.html" data-transition="none">
                             Museu de arte moderna - MAM
+                            <span class="ui-li-count" id="distancia"></span>
                         </a>
                     </li>
-                    <li data-theme="c">
+                    <li data-theme="c" id="paodeacucar">
                         <a rel="external" href="pao-de-acucar.html" data-transition="none">
                             Pão de Açúcar
+                            <span class="ui-li-count" id="distancia"></span>
                         </a>
                     </li>
                 </ul>
@@ -61,6 +79,14 @@
 <script type="text/javascript">
     var alturaDevice = $(window).height();
     resizeVideo();
+    var localizacao;
+    if (navigator.geolocation) {
+        console.log('teste');
+        // Se conseguir fazer a leitura, chama a função posicao(). Se não conseguir, chama a função erro()
+        navigator.geolocation.getCurrentPosition(posicao, erro);
+    } else {
+        //alert('Seu navegador não tem suporte a geolocalização');
+    }
 </script>
 </body>
 </html>

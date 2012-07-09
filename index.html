@@ -11,10 +11,29 @@
 	<script src="js/jquery.mobile.scrollview.js"></script>
 	<script src="js/scrollview.js"></script>
 	<script src="js/geral.js"></script>	
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26642642-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head> 
 <body> 
+<div id="fb-root"></div>
+<script>    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));</script>
     <div data-role="page" data-theme="d" id="home" onresize="resizePage();$.mobile.fixedToolbars.show();">
-        <div data-theme="a" data-role="header" data-position="fixed">
+        <div data-theme="a" data-role="header" data-position="fixed" data-inline="true">
             <h1>
                 Rio Histórico
             </h1>
@@ -22,6 +41,7 @@
         <div data-role="content" style="padding: 8px">
             <h2>
                 Você Sabia?
+            <div style="padding-left:20px" class="fb-like" data-href="http://renatolopes.com/rh/index.html" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>
             </h2>
             <div>
                 <p>
@@ -48,7 +68,7 @@
                     </b>
                 </p>
             </div>
-            <a data-role="button" data-transition="fade" data-ajax="false" data-theme="c" href="listademonumentos.html">
+            <a data-role="button" data-transition="fade" rel="external" data-theme="c" href="listademonumentos.html">
                 Veja Mais
             </a>
         </div>
