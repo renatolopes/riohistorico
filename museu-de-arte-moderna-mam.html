@@ -43,32 +43,32 @@
         <div style="">
             <img width="288" height="200" src="imagens/museu-de-arte-moderna-mam.jpg" />
         </div>
-        <div>
-            <ul>
-                <li>
-                    O modelo original da cabeça do Cristo foi adquirido pela Prefeitura do
-                    Rio de Janeiro em 2001 por 84 mil reais. O escultor Paul Landowski assina
-                    a peça, feita em terracota.
-                </li>
-                <li>
-                    Em 2004, a Sociedade de Autores e Compositores Dramáticos da França, por
-                    solicitação da família de Ladowsky, encaminhou à Sociedade Brasileira de
-                    Autores um pedido de cobrança de direitos autorais pelo uso da imagem do
-                    Cristo. Segundo a lei brasileira, não seria necessário pagar o valor requerido
-                    porque após 15 anos a obra se tornou objeto de domínio público.
-                </li>
-                <li>
-                    Para a comemoração dos 440 anos do Rio de Janeiro (RJ), em 2005, o monumento
-                    recebeu uma nova iluminação concebida pela francesa Agnès P. Winter. A
-                    cor azul foi escolhida para celebrar a paz.
-                </li>
-            </ul>
+       <div>
+            <p>
+                <strong id="textoCuriosidade">
+                </strong>
+            </p>
+              <a data-role="button" id="btnMaisCuriosidades">Ver mais</a>
         </div>
     </div>
 </div>
 <script type="text/javascript">
+    recuperarCuriosidade(dadosMAM);
     var alturaDevice = $(window).height();
     resizeVideo();
+
+    $(document).ready(function () {
+        $('#btnMaisCuriosidades').bind('click', function (e) {
+            recuperarCuriosidade(dadosMAM);
+            e.stopPropagation();
+            e.preventDefault();
+            return false;
+        });
+
+        $.mobile.ajaxEnabled = true;
+        $.mobile.loadingMessage = 'Carregando';
+        $.mobile.pageLoadErrorMessage = 'Falha ao carregar';
+    });
 </script>
 </body>
 </html>

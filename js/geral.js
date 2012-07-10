@@ -233,5 +233,16 @@ var dadosArcos = ["A estrutura dos arcos, em pedra argamassada, apresentava orig
 ,"Conhecido como Arcos da Lapa a obra na verdade se chama Aqueduto da Carioca"
 ,"Foi construído pelo governador Ayres Saldanha, em 1723, para trazer água do rio Carioca até o Largo da Carioca, como solução para a falta d'água na cidade."
 ,"Em 1896, os arcos passaram a servir como viaduto para o acesso de bondes a Santa Teresa. É o único sistema de bondes ainda existente no Rio de Janeiro, e dá ao bairro aspecto peculiar e histórico."
-]
+];
+
+var dadosMAM = ["O museu foi inaugurado em 1948, por iniciativa de um grupo de empresários presidido por Raymundo Ottoni de Castro Maya. É uma organização particular sem fins lucrativos, fruto do contexto cultural e econômico que o Brasil vivenciou no segundo pós-guerra, em que se observou a diversificação dos equipamentos culturais deste país, a aquisição de um valioso patrimônio artístico e a assimilação das correntes artísticas modernas."
+,"Conserva hoje aproximadamente 11 mil objetos, grande parte proveniente da Coleção Gilberto Chateaubriand, depositada em regime de comodato no museu em 1993."
+,"No dia 8 de julho de 1978, um incêndio causado ou por um cigarro ou por uma falha elétrica, destruiu 90% de seu acervo, principalmente obras de Picasso (cabeça cubista e um Retrato de Dora Maar), Miró, Salvador Dalí, Max Ernst, René Magritte, Ivan Serpa, Manabu Mabe e muitos outros, além de todos os trabalhos presentes em uma grande retrospectiva de Joaquin Torres García."
+,"O Museu de artes modernas do rio foi considerado de utilidade pública pelo governo federal em 1954"
+,"O prédio modernista representa um marco na arquitetura brasileira, resultado das linhas retas do arquiteto Affonso Eduardo Reidy e do projeto paisagístico de Roberto Burle Marx."
+,"Com um acervo de onze mil obras reúne esculturas e pinturas de artistas como Anita Malfatti, Tarsila do Amaral, Lasar Segall, Portinari, Di Cavalcanti, Lygia Clark, Helio Oiticica e Franz Weissmann."
+,"Seu edifício-sede, a obra mais conhecida do arquiteto carioca Affonso Reidy, segue a orientação da arquitetura racionalista, destacando-se pelo emprego de estruturas vazadas e pela integração com o entorno"
+,"A princípio, o museu funcionou provisoriamente no Palácio da Cultura, transferindo-se, em 1958, para uma sede própria, as suas atuais instalações."
+,"O MAM abrigou em 1967 a mostra Nova Objetividade, na qual Hélio Oiticica expôs a sua obra Tropicália, cujo nome deu origem ao Movimento Tropicalista."]
+
  
