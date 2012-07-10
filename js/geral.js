@@ -99,6 +99,7 @@ var jsonLocais = {
     $.each(lista.find("li"), function(keyMonumento, liMonumento) { 
         $(liMonumento).find("#distancia").text(recuperarDistanciaAtracao(jsonLocais[liMonumento.id]) + " km");
     });
+    refreshListView("#listaMonumentos");
   }
 
   function ordenarMonumentosPorGeolocalizacao()
@@ -170,4 +171,58 @@ var dadosPaoDeAcucar = ["Para construir o teleférico foram necessário mais de 
 ,"O bondinho foi cenário do filme 007 Contra o Foguete da Morte, de 1979, no qual o agente secreto britânico James Bond (aqui interpretado pelo ator Roger Moore) derrota seu famoso inimigo Dentes de Aço (Jaws), interpretado por Richard Kiel"
 ,"O bondinho foi inaugurado em 1912, ou seja, já tem 100 anos! "
 ,"O Papa João Paulo II já passeou no bondinho"
-,"John Kennedy é outra personalidade que andou de bondinho"];
+,"John Kennedy é outra personalidade que andou de bondinho"
+,"Até o cientista Albert Einstein já passeou no bondinho. E você? Já conhece?"];
+
+var dadosMaracana = ["Durante a copa do mundo de 1950 o maracanã chegou a ter 205 mil pessoas"
+,"O Maracanã é o 9º maior estádio do mundo e o 2º maior das Américas."
+,"O primeiro gol no Maracanã aconteceu em um amistoso em 16 de junho de 1950 e marcado pelo jogado Didi (Waldir Pereira). O jogo foi entre as equipes de Rio e São Paulo. Os paulistas venceram por 3 a 1, mas o primeiro gol foi do time carioca."
+,"O nome oficial do estádio, Mário Filho, foi dado em homenagem ao falecido jornalista carioca, irmão de Nelson Rodrigues, que se destacou no apoio à construção do Maracanã."
+,"O nome popular é oriundo do rio Maracanã, que cruza a Tijuca passando por São Cristóvão, desaguando no Canal do Mangue antes do deságue na baía de Guanabara."
+,"O maior artilheiro do Maracanã foi Zico, eterno ídolo Rubro-Negro. O galinho marcou 333 gols em 435 jogos."
+,"Além de partidas de futebol, o estádio ja foi palco para diversos shows de artistas consagrados. Nomes como Frank Sinatra, Kiss, Tina Turner, Madonna, Rolling Stones, Paul McCartney e Sting já se apresentaram no Maracanã."
+,"Em 2000, ano que o Maracanã completou 50 anos, foi inaugurada a calçada da fama, onde grandes craques que fizeram a história no esporte deixaram sua marca"
+,"Para construir o maracanã foram gastos 7 milhões 730 mil horas de trabalho ininterruptos; se empilhados, os sacos de cimento formariam 78 colunas da altura do Corcovado ou duas vezes a altura do Pão de Açúcar; o concreto daria para levantar edifícios de dez andares em ambos os lados e em toda a extensão da Av. Rio Branco, no Centro do Rio; com a madeira se construiria três tablados das dimensões da Av. Presidente Vargas; com a areia, a mesma avenida seria coberta com uma camada de 25 cm"
+,"Na noite de véspera de inauguração do Maracanã, 16 junho de 1950, o gramado sofreu seu primeiro teste:  uma pelada entre os engenheiros e os operários que trabalharam na construção. Por mais amistosa que tenha sido, foi a primeira partida do estádio, embora não se saiba o placar."
+,"O terreno onde hoje se encontra o Maracanã era explorado por jesuítas, que ali mantinham um engenho de açúcar. No terreno, viviam muitos maracanãs, pássaro que mais tarde, originou o nome do estádio."
+,"Antes de abrigar o maracanã o local abrigava o Derby Club, onde eram realizadas corridas de cavalo."
+,"A Seleção Brasileira disputou no Maracanã cinco partidas, de seis durante toda a Copa. Na partida final, foi registrado oficialmente o público recorde de 199.854 torcedores presentes (173.850 pagantes).[12] Nesta decisão, o Brasil foi derrotado de virada por 2 a 1 para o Uruguai. A derrota em solo nacional ficou marcada na história do povo brasileiro, sendo conhecida popularmente como o Maracanazo."
+,"A Copa do Mundo de 1950 foi realizada com as obras ainda inconcluídas. A rigor, estas só terminaram em 1965."
+,"O formato do estádio é oval, medindo 317 metros no eixo maior e 279 metros no menor. Sua altura máxima é de 32 metros. A distância entre o centro do campo e o espectador mais afastado é de 126 metros."
+,"O gramado tem 110 metros de comprimento por 75 de largura. É circundado por um fosso de 3 metros de largura e profundidade, com bordas em desnível. O acesso ao gramado é feito por intermédio de 4 túneis subterrâneos."
+,"Não existiam plantas detalhadas, só um projeto que definia a forma do estádio. Os engenheiros tiveram que projetar uma construção virtual, do subsolo à marquise."
+,"A maior goleada da história do Maracanã foi Flamengo 12 a 2 São Cristóvão, pelo Campeonato Carioca de 1956."
+,"O Maracanã foi palco do milésimo gol da carreira de Pelé (Vasco 1 a 2 Santos, em 19 de novembro de 1969) e também da despedida do Rei do Futebol da Seleção Brasileira (Brasil 2 a 2 Iugoslávia, em 18 de julho de 1971)."
+,"O maior público-visitante de uma equipe de fora da cidade do Rio de Janeiro foi registrado na semifinal do Campeonato Brasileiro de 1976 entre Fluminense e Corinthians. Aproximadamente 70.000 dos 146.043 pagantes torciam para o Corinthians, que venceu o confronto nos penaltis."
+,"Maracanã vem do tupi maracá (chocalho) com nã (semelhante). É um papagaio grande conhecido no norte do país como Maracanã-guaçu. O chilrear dessa ave é semelhante ao som de um chocalho, daí o nome dado pelos indígenas. Habitavam em grandes bandos, a região do Derby, antes da construção do estádio"
+,"Foram utilizados 500.000 sacos de cimento na construção do Maracanã"
+,"Foram utilizados 10.000.000Kg de ferro na armação da estrutura do Maracanã"
+,"Foram utilizados 40.000 caminhões, para transportes diversos durante a construção do Maracanã"
+,"O volume total de concreto utilizado na construção do Maracanã foi de 80.000m³"
+,"A área total de madeiras utilizadas na construção do Maracanã foi de 650.000m²"
+,"O volume total de areia utilizado na construção do Maracanã foi de 45.000m³"
+,"O volume total de escavações, para a execução das fundações do Maracanã foi de 39.572.000,00m³"
+,"O volume total de aterro utilizado na construção do Maracanã foi de 134.700.000,00m³"
+,"A área total das formas utilizadas na estrutura do Maracanã foi de 475.562,00m²"
+,"O total dos escoramentos utilizados na construção do Maracanã foi de 1.004.490,00m"
+,"O tempo médio de escoamento total ( saída ) do público da arquibancada é de 20 minutos"
+,"A distância aproximada do Maracanã ao Aeroporto Internacional do Rio de Janeiro é de 15,2Km"
+,"A média de jogos anuais no Maracanã é de 76 eventos, considerando-se as partidas preliminares"
+,"O volume de concreto utilizado na construção do Estádio seria suficiente para construir a estrutura de edifícios de 10 andares em ambos os lados, e em toda a extensão da Avenida Rio Branco ( 2Km ), no Rio de Janeiro, ou na Park Avenue, em Nova Iorque ( E.U.A. ), entre as ruas 35 e 65"
+,"Se todos os degraus da arquibancada do Maracanã fossem emendados, daria para ligar a Igreja da Candelária, no Centro do Rio de Janeiro à estação ferroviária de Cascadura, subúrbio da Central do Brasil, também no Rio de Janeiro"
+,"Um homem sozinho construindo o Maracanã, e trabalhando 6 horas por dia, levaria nada menos que 1.860 anos para terminá-lo, trabalhando inclusive sábados, domingos e feriados"
+,"Colocando-se em fila os 40.000 caminhões que entraram no Maracanã durante sua construção, estes cobririam toda extensão da estrada Rio-São Paulo ( 500Km ), ou de Nova Iorque a Washington ( E.U.A.)"
+,"Os ferros utilizados na construção do Maracanã, transformados em barras de 3/16", ou seja, 45mm, seriam suficientes para contornar o globo terrestre uma vez e meia passando pela linha do Equador"
+,"Os sacos de cimento consumidos na construção do Maracanã empilhados individualmente forneceriam 78 colunas da altura do Corcovado"
+,"Com a madeira utilizada na construção do Maracanã, forraria-se completamente a Avenida Presidente Vargas 3 vezes, em toda a sua extensão, que tem 2,5Km"
+,"Com a areia utilizada na construção do Maracanã cobriria-se a Avenida Presidente Vargas, que tem a extensão de 2,5Km, completamente, com uma camada de 25cm de altura"
+,"A extensão dos degraus da arquibancada do Maracanã somados eqüivale à distância entre Dover e Calais ( 32Km ), ou de Teresópolis a Petrópolis ( RJ )"
+,"Trabalharam em média na construção do Maracanã 3.500 operários por dia, chegando aos 11.000 às vésperas da inauguração"
+,"Foram fabricados exclusivamente para uso nas estruturas do Maracanã, vergalhões de 1 1/4" de diâmetro, com 34,00m de comprimento"
+,"Durante os jogos da Copa do Mundo de 1950, somente a Western Telegraf Co. transmitiu mais de 15.000 palavras no jogo Brasil x Suécia"
+,"Durante o mesmo jogo acima a Estrada de Ferro Central do Brasil transportou em uma hora 60.000 pessoas"
+,"Foram gastas 7.730.000 de horas de serviço ininterrupto na construção do Maracanã"
+,"A quantidade de pedras utilizada na construção do Maracanã seria suficiente para encher uma trincheira de 2,50m de largura, com 2,00m de altura, numa extensão de 12Km, ou então para construir um prisma de 20.000m² de base e 3.000m de altura"
+,"O volume de escavações executadas na construção do Maracanã corresponde a abertura de 1.640 poços de 2,00 x 2,50m, com 5,00m de profundidade"
+,"O perímetro do Maracanã eqüivale a 1/40.000 do meridiano terrestre"
+]
