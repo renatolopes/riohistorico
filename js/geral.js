@@ -212,17 +212,26 @@ var dadosMaracana = ["Durante a copa do mundo de 1950 o maracanã chegou a ter 2
 ,"Se todos os degraus da arquibancada do Maracanã fossem emendados, daria para ligar a Igreja da Candelária, no Centro do Rio de Janeiro à estação ferroviária de Cascadura, subúrbio da Central do Brasil, também no Rio de Janeiro"
 ,"Um homem sozinho construindo o Maracanã, e trabalhando 6 horas por dia, levaria nada menos que 1.860 anos para terminá-lo, trabalhando inclusive sábados, domingos e feriados"
 ,"Colocando-se em fila os 40.000 caminhões que entraram no Maracanã durante sua construção, estes cobririam toda extensão da estrada Rio-São Paulo ( 500Km ), ou de Nova Iorque a Washington ( E.U.A.)"
-,"Os ferros utilizados na construção do Maracanã, transformados em barras de 3/16", ou seja, 45mm, seriam suficientes para contornar o globo terrestre uma vez e meia passando pela linha do Equador"
+,"Os ferros utilizados na construção do Maracanã, transformados em barras de 3/16 polegadas, ou seja, 45mm, seriam suficientes para contornar o globo terrestre uma vez e meia passando pela linha do Equador"
 ,"Os sacos de cimento consumidos na construção do Maracanã empilhados individualmente forneceriam 78 colunas da altura do Corcovado"
 ,"Com a madeira utilizada na construção do Maracanã, forraria-se completamente a Avenida Presidente Vargas 3 vezes, em toda a sua extensão, que tem 2,5Km"
 ,"Com a areia utilizada na construção do Maracanã cobriria-se a Avenida Presidente Vargas, que tem a extensão de 2,5Km, completamente, com uma camada de 25cm de altura"
 ,"A extensão dos degraus da arquibancada do Maracanã somados eqüivale à distância entre Dover e Calais ( 32Km ), ou de Teresópolis a Petrópolis ( RJ )"
 ,"Trabalharam em média na construção do Maracanã 3.500 operários por dia, chegando aos 11.000 às vésperas da inauguração"
-,"Foram fabricados exclusivamente para uso nas estruturas do Maracanã, vergalhões de 1 1/4" de diâmetro, com 34,00m de comprimento"
+,"Foram fabricados exclusivamente para uso nas estruturas do Maracanã, vergalhões de 1 1/4 polegadas de diâmetro, com 34,00m de comprimento"
 ,"Durante os jogos da Copa do Mundo de 1950, somente a Western Telegraf Co. transmitiu mais de 15.000 palavras no jogo Brasil x Suécia"
 ,"Durante o mesmo jogo acima a Estrada de Ferro Central do Brasil transportou em uma hora 60.000 pessoas"
 ,"Foram gastas 7.730.000 de horas de serviço ininterrupto na construção do Maracanã"
 ,"A quantidade de pedras utilizada na construção do Maracanã seria suficiente para encher uma trincheira de 2,50m de largura, com 2,00m de altura, numa extensão de 12Km, ou então para construir um prisma de 20.000m² de base e 3.000m de altura"
 ,"O volume de escavações executadas na construção do Maracanã corresponde a abertura de 1.640 poços de 2,00 x 2,50m, com 5,00m de profundidade"
 ,"O perímetro do Maracanã eqüivale a 1/40.000 do meridiano terrestre"
+];
+
+var dadosArcos = ["A estrutura dos arcos, em pedra argamassada, apresentava originalmente 270 metros de comprimento por 17,6 metros de altura. Em estilo românico, caiada, possui 42 arcos duplos e óculos na parte superior."
+,"Em sua construção foi empregada a mão de obra de escravos indígenas e africanos."
+,"Os arcos da lapa são considerados como a obra arquitetônica de maior porte empreendida no Brasil durante o período colonial"
+,"Conhecido como Arcos da Lapa a obra na verdade se chama Aqueduto da Carioca"
+,"Foi construído pelo governador Ayres Saldanha, em 1723, para trazer água do rio Carioca até o Largo da Carioca, como solução para a falta d'água na cidade."
+,"Em 1896, os arcos passaram a servir como viaduto para o acesso de bondes a Santa Teresa. É o único sistema de bondes ainda existente no Rio de Janeiro, e dá ao bairro aspecto peculiar e histórico."
 ]
+ 
